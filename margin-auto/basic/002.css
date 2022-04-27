@@ -1,0 +1,18 @@
+.item {
+    /* width: calc(50% - 100px); */
+    /* box-sizing: border-box; */
+    width: 50%;
+    height: auto;
+}
+.item-inside {
+    background-color: orange;
+    width: auto;
+    padding: 50px;
+}
+.item-inside:nth-child(odd) {
+    margin-left: 50%;
+}
+.item-inside:nth-child(even) {
+    margin-right: 50%;
+}
+

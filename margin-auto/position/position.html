@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Position Mini Example</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+        background-color: #666;
+        /* position: relative;  */
+    }
+    .grand-father {
+        background-color: #bbb;
+        width: 800px;
+        margin: 0 auto;
+        padding: 1px;
+        position: relative;  
+    }                               
+    .father {
+        background-color: white;
+        width: 300px;
+        height: 200px;
+        margin: 50px auto;
+        border-radius: 50px;
+        /* position: relative; */
+    }
+    /* .children {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    } */
+    .pos {
+        background-color: orange;
+        position: absolute;
+
+        /* 축약속성, 미래지향적 기법(익스플로우가 없는 세상에서 가능한 방법) */
+        /* inset: 0; */
+
+        /* 가용공간을 늘리는 개념 */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+        /* margin-right: 100px; */
+        margin: auto;
+
+        /* 인라인처럼 된게 아님. 노말 플로우를 벗어나면서 부모를 잃었고, 자기 컨텐츠만큼 width를 가진 블록레벨이 된것 */
+        /* 독립을 하면 좁은 방에 살게됨... */
+        border-radius: 50%;
+        box-shadow: inset 10px 10px 10px rgba(225,225,225,0.4), 10px 10px 10px rgba(0,0,0,0.1);
+    } 
+  </style>
+</head>
+<body>
+  <div class="grand-father">
+    <div class="father">
+        <!-- <img class="children" src="img.png"> -->
+        <div class="pos">안녕</div>
+    </div>
+  </div>
+</body>
+</html>

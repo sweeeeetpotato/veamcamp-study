@@ -1,0 +1,14 @@
+.item {
+    background-color: orange;
+    /* width: calc(50% - 100px); */
+    /* box-sizing: border-box; */
+    width: 50%;
+    height: auto;
+    padding: 50px;
+}
+.item:nth-child(even) {
+    /* margin-left: 50%; */
+    margin-left: auto;
+}
+
+

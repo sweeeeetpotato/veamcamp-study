@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+body {
+    background-color: #111;
+}
+.cover {
+    background-color: #222;
+    color: white;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch;가 기본값이라 이미지 사이즈가 커져버림*/
+    align-items: center;
+    justify-content: center;
+}
+.cover-logo {
+    margin-top: auto;
+    /* margin-bottom: auto; */
+}
+.cover-description {
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+}
+.cover-point {
+    margin-top: auto;
+    /* margin-bottom: auto; */
+    /* align-self: flex-end; */
+}
